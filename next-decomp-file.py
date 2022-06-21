@@ -3,7 +3,6 @@ from jak1_file_list import file_list
 
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument("--files")
 args = parser.parse_args()
 
 def update_json_file(decomp_list):
@@ -28,7 +27,6 @@ if args.files:
     for file in file_list:
       if file[0] == inFile:
         break
-      elif file[1] == inFile:
         # NOTE - kinda a hack, assumes -ag files always come after
         break
   if len(decomp_list) > 0:
