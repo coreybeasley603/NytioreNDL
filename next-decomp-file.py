@@ -5,7 +5,6 @@ import argparse
 parser = argparse.ArgumentParser()
 args = parser.parse_args()
 
-def update_json_file(decomp_list):
   new_file_contents = []
   print("Decompiling - " + ','.join(decomp_list))
   # TODO, update the CGO/DGO
